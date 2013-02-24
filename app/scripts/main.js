@@ -11,3 +11,7 @@ require.config({
     backbone: '../components/backbone/backbone'
   }
 });
+
+require(['views/app'], function(App) {
+  new App();
+});
