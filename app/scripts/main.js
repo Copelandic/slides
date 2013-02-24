@@ -11,7 +11,3 @@ require.config({
     backbone: '../components/backbone/backbone'
   }
 });
- 
-require(['backbone'], function(Backbone) {
-	console.log( Backbone );
-});
