@@ -1,5 +1,6 @@
 {
 	"dependencies": {
-		"backbone": null
+		"backbone": null,
+		"normalize-css": null
 	}
 }

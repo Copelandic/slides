@@ -52,7 +52,6 @@ define(['backbone', 'views/slide'], function(Backbone, SlideView) {
 
 		animateToNewSlide: function(slides, newSlide, direction) {
 			slides.filter(':visible')
-				.css('position', 'absolute')
 				.animate({
 					top: direction === 'next' ? '100%' : '-100%',
 					opacity: 'hide'
