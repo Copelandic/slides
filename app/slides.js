@@ -1,6 +1,12 @@
 window.slides = [
 	{ title: 'Wee Slideshow' },
 	{
+		snippet: {
+			'CSS': 'snippets/ex1.css',
+			'JavaScript': 'snippets/ex1.js'
+		}
+	},
+	{
 		title: 'Self Executing Function',
 		snippet: 'snippets/ex1.js'
 	},
