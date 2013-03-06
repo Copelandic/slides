@@ -7,6 +7,8 @@ define(['backbone'], function(Backbone) {
 				this.renderImage();
 			} else if ( this.model.get('bullets') ) {
 				this.renderBullets();
+			} else if ( this.model.get('quote' ) ) {
+				this.renderQuote();
 			} else {
 				this.renderHeading();
 			}
@@ -33,6 +35,23 @@ define(['backbone'], function(Backbone) {
 						'<li>' + this.model.get('bullets').join('</li><li>'),
 					'</ul>'
 					].join(''));
+		},
+
+		renderQuote: function() {
+			this.$el
+				.addClass('quote')
+				.append([,
+					'<figure>',
+						'<blockquote>',
+							this.model.get('quote'),
+						'</blockquote>',
+						'<figcaption>',
+							'<cite>',
+								this.model.get('cite'),
+							'</cite>',
+						'</figcaption>',
+					'</figure>'
+				].join(''));
 		},
 
 		renderHeading: function() {

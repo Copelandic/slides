@@ -37,3 +37,27 @@ h1.normal
 	max-width: 100%
 	border: 1px solid #666
 	padding: 2px
+
+.quote blockquote
+	display: inline-block
+	font-style: italic
+	text-align: left
+	margin-bottom: 0
+
+.quote blockquote::before,
+.quote blockquote::after
+	content: '\"'
+	font-weight: bold
+	color: #666
+
+.quote blockquote::before
+	margin-left: -15px
+
+.quote cite
+	float: right
+	font-weight: bold
+	font-style: normal
+	color: #666
+
+.quote cite::before
+	content: '- '
