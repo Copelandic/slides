@@ -1,8 +1,8 @@
 window.slides = [
 	{ title: 'Wee Slideshow' },
 	{
-		title: 'Some CSS Code Here',
-		snippet: 'snippets/ex1.css'
+		title: 'Self Executing Function',
+		snippet: 'snippets/ex1.js'
 	},
 	{
 		quote: 'Knowledge is power',
